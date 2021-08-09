@@ -108,8 +108,7 @@ OR, Without Changing into NGNIX CONF File Direct Hit the `IP:8080` to the browse
 
 
 15) ``Credentials → System → Globals Credentials → Add Credentials → SSH Username with private key → under Private key select ‘Enter directly’``
-
-![](file:///home/aditya/Pictures/2.jpeg)
+![](/image/2.jpeg)
 
 *Paste the key text in the window and save.*
 
@@ -121,7 +120,7 @@ The Username field can be anything. It should be something to that is identifies
 
 17) Inside settings select ‘Deploy keys’ from the side menu
 
-![](file:///home/aditya/Pictures/3.jpeg)
+![](/image/3.jpeg)
 
 18) Select ‘Add deploy key’.
 
@@ -145,14 +144,14 @@ use this text inside the Key area. The title can be any identifiable name.
 - Enter any name that is identifiable.
 - Select Freestyle project
 
-![](file:///home/aditya/Pictures/4.jpeg)
+![](/image/4.jpeg)
 
 - Under ‘Source Code Management’ → Select Git
 
-![](file:///home/aditya/Pictures/5.jpeg)
+![](/image/5.jpeg)
 
 - for Repository URL. use the SSH version of the URL (found inside your GitHub project under Clone/Download)
-![](file:///home/aditya/Pictures/6.jpeg)
+![](/image/6.jpeg)
 
 
 - Since we will be compiling a React project, make sure to check off the option to ‘Provide Node & npm bin/folder to PATH’ under Build Environment
@@ -163,12 +162,12 @@ use this text inside the Key area. The title can be any identifiable name.
 
 - Under Build. select Execute Shell. inside the Command window we’ll enter the items that are used on the command line to compile the ReactJS build. These commands will run after the repository is fetched.
 
-![](file:///home/aditya/Pictures/7.jpeg)
+![](/image/7.jpeg)
 
 **Post-build Actions will contain the SSH transfer after the build. After successful build we’ll configure.**
 
 21) Next let’s test that the code is being fetched and compiled successfully. From the main menu, select the new Jenkins task that was created.
-![](file:///home/aditya/Pictures/8.jpeg)
+![](/image/8.jpeg)
 
 
 - select ‘Build Now’. A new numbered build will appear in the Build History area below the side menu.
@@ -200,8 +199,7 @@ use this text inside the Key area. The title can be any identifiable name.
 
 24) Run the build!
 
-
-![](file:///home/aditya/Pictures/9.jpeg)
+![](/image/9.jpeg)
 
 
 *Jenkins should now be fetching the GitHub files, compiling, and then finally moving to the staging server*
