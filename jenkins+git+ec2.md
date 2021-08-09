@@ -1,5 +1,5 @@
 # Deploying an Amazon EC2 Build Server For ReactJS    with Jenkins and GitHub
-![](file:///home/aditya/Pictures/1.jpeg)
+![](/image/1.jpeg)
 
 
 DevOps has been the most discussed subject these days, especially in Continuous Integration/ Continuous Delivery (CI/CD). Therefore, CI/CD has been the main component of the software development cycle, with so many configurations and tools available. We will use Amazon Web Services (AWS) as the cloud platform, Github for the code repository, Jenkins for the Continuous Integration (CI), and AWS CodeDeploy service for the Continuous Delivery (CD).
