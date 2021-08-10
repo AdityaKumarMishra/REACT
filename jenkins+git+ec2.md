@@ -62,7 +62,7 @@ add the following:
 
 
 
-type esc then :qw! to exit VIM.
+type esc then :wq! to exit VIM.
 
 10) Restart NGINX
 
