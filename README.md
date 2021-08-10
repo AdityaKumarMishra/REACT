@@ -155,10 +155,10 @@ use this text inside the Key area. The title can be any identifiable name.
 
 
 - Since we will be compiling a React project, make sure to check off the option to ‘Provide Node & npm bin/folder to PATH’ under Build Environment
-- 
+
 
 - Under the dropdown for NodeJS Installation, select the node install.
-- 
+
 
 - Under Build. select Execute Shell. inside the Command window we’ll enter the items that are used on the command line to compile the ReactJS build. These commands will run after the repository is fetched.
 
