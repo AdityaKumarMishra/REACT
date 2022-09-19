@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello! this my app..Thank you Vinay sir Credit goes to you
+          Hello! this my app..Its working on AWS Amplify by Aditya 
         </p>
         <a
           className="App-link"
