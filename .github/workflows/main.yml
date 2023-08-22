@@ -18,7 +18,7 @@ jobs:
       run: |
         git config --global user.name "aditya"
         git config --global user.email "aditya@gmail.com"
-        git add https://github.com/devops-team-poc/terraform-poc.git
+        git remote add origin https://github.com/devops-team-poc/terraform-poc.git
         git push origin main
 
       env:
