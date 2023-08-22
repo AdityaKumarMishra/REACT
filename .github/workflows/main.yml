@@ -20,6 +20,7 @@ jobs:
           git clone https://github.com/devops-team-poc/terraform-poc.git
           cd terraform-poc  # Change to the cloned repository directory
           # Make your changes here
+          git checkout -b main
           git add .
           git commit -m "Update something"
           git push origin main
