@@ -3,25 +3,25 @@ name: Update GitHub B
 on:
   push:
     branches:
-      - main # Change this to the branch you want to monitor
+      - main
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check Out Code
-      uses: actions/checkout@v3
+      - name: Check Out Code
+        uses: actions/checkout@v2
 
-    - name: Update GitHub B
-      run: |
-        git config --global user.name "aditya"
-        git config --global user.email "aditya@gmail.com"
-        git clone https://github.com/devops-team-poc/terraform-poc.git
-        cd terraform-poc
-        git remote set-url origin "https://github.com/devops-team-poc/terraform-poc.git"
-        git config --local user.name "aditya"
-        git config --local user.email "aditya@gmail.com"
-        git push origin main
-      env:
-        GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
+      - name: Update GitHub B
+        run: |
+          git config --global user.name "aditya"
+          git config --global user.email "aditya@gmail.com"
+          git clone https://github.com/devops-team-poc/terraform-poc.git
+          cd terraform-poc  # Change to the cloned repository directory
+          # Make your changes here
+          git add .
+          git commit -m "Update something"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_B_TOKEN }}
