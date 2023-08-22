@@ -18,9 +18,9 @@ jobs:
 
     - name: Update GitHub B
       run: |
-        git config --global user.name "Your Name"
-        git config --global user.email "your.email@example.com"
-        git remote add githubB https://github.com/yourusername/repoB.git
+        git config --global user.name "Aditya"
+        git config --global user.email "aditya@gmail.com"
+        git remote add githubB https://github.com/devops-team-poc/terraform-poc.git
         git push githubB main
       env:
         GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
