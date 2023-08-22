@@ -17,7 +17,7 @@ jobs:
         run: |
           git config --global user.name "aditya"
           git config --global user.email "aditya@gmail.com"
-          git clone https://github.com/devops-team-poc/terraform-poc.git
+          git clone https://github.com/AdityaKumarMishra/REACT.git
           cd terraform-poc  # Change to the cloned repository directory
           # Make your changes here
           git checkout -b main
