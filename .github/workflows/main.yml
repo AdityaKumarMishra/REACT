@@ -17,7 +17,7 @@ jobs:
       run: |
         git config --global user.name "aditya"
         git config --global user.email "aditya@gmail.com"
-        git remote add https://github.com/devops-team-poc/terraform-poc.git
-        git push master
+        git remote add githubB https://github.com/devops-team-poc/terraform-poc.git
+        git push githubB main
       env:
         GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
