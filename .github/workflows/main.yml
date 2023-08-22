@@ -22,4 +22,4 @@ jobs:
         git push githubB main
 
       env:
-        GH_B_TOKEN: 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
+        GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
