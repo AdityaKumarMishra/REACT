@@ -1,0 +1,26 @@
+name: Deploy to Server and Update GitHub B
+
+on:
+  push:
+    branches:
+      - main # Change this to the branch you want to monitor
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Out Code
+      uses: actions/checkout@v2
+
+    - name: Deploy to Server
+      # Add your deployment steps here, like SSHing into the server and copying files.
+
+    - name: Update GitHub B
+      run: |
+        git config --global user.name "Your Name"
+        git config --global user.email "your.email@example.com"
+        git remote add githubB https://github.com/yourusername/repoB.git
+        git push githubB main
+      env:
+        GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
