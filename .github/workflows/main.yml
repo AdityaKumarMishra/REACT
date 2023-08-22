@@ -19,7 +19,7 @@ jobs:
         git config --global user.name "aditya"
         git config --global user.email "aditya@gmail.com"
         git clone https://github.com/devops-team-poc/terraform-poc.git
-        git push https://devops-team-poc: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@github.com/devops-team-poc/terraform-poc.git
+        git push https://devops-team-poc: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X@github.com/devops-team-poc/terraform-poc.git
 
 
       env:
