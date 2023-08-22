@@ -17,6 +17,7 @@ jobs:
       run: |
         git config --global user.name "aditya"
         git config --global user.email "aditya@gmail.com"
+        git remote add origin https://github.com/devops-team-poc/circleci-test.git
         git push origin main
       env:
         GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
