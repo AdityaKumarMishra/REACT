@@ -1,4 +1,3 @@
-
 name: Update GitHub B
 
 on:
@@ -19,8 +18,10 @@ jobs:
         git config --global user.name "aditya"
         git config --global user.email "aditya@gmail.com"
         git clone https://github.com/devops-team-poc/terraform-poc.git
-        git push https://devops-team-poc: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X@github.com/devops-team-poc/terraform-poc.git
-
-
+        cd terraform-poc
+        git remote set-url origin "https://github.com/devops-team-poc/terraform-poc.git"
+        git config --local user.name "aditya"
+        git config --local user.email "aditya@gmail.com"
+        git push origin main
       env:
         GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
