@@ -13,7 +13,7 @@ DevOps has been the most discussed subject these days, especially in Continuous 
 **Setup an EC2 instance**
 
 1) Login to Amazon AWS and select an EC2 instance
-2) Select micro tier and Amazon Linux instance
+2) Select micro tier and Amazon Linux instances
 3) Create a key pair for the server or choose an existing one
 4) Set inbound/outbound security group settings
     * Change HTTP to be open outbound and inbound
