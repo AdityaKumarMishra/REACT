@@ -23,7 +23,7 @@ jobs:
           protocol=https
           host=github.com
           username=devops-team-poc
-          password=${{ secrets.GH_B_TOKEN }}
+          password=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
 
       - name: Update GitHub B
         run: |
