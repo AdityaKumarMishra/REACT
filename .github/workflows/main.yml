@@ -1,4 +1,4 @@
-name: Update GitHub B
+name: Update GitHub A
 
 on:
   push:
@@ -8,15 +8,10 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
+
     steps:
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-          fetch-depth: 0
+      - name: Check Out Code
+        uses: actions/checkout@v2
 
       - name: Set Up Git
         run: |
