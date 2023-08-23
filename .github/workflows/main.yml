@@ -1,4 +1,4 @@
-name: Update GitHub A
+name: Update GitHub B
 
 on:
   push:
@@ -10,19 +10,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check Out Code
-        uses: actions/checkout@v2
+    - name: Check Out Code
+      uses: actions/checkout@v3
 
-      - name: Set Up Git
-        run: |
-          git config user.name "devops-team-poc"
-          git config user.email "devops.consultancy@ongraph.com"
-          git remote add githubA https://github.com/devops-team-poc/terraform-poc.git
-          git config credential.helper store
-          echo "https://github.com/devops-team-poc/terraform-poc.git" > ~/.git-credentials
-          echo "username=devops-team-poc" >> ~/.git-credentials
-          echo "password=${{ secrets.GH_B_TOKEN }}" >> ~/.git-credentials
-
-      - name: Update GitHub B
-        run: |
-          git push 
+    - name: Update GitHub B
+      run: |
+        git config --global user.name "Aditya"
+        git config --global user.email "aditya@gmail.com"
+        git remote add githubA https://github.com/devops-team-poc/terraform-poc.git
+        git push main
+      env:
+        GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
