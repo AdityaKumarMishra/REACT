@@ -25,4 +25,4 @@ jobs:
 
       - name: Update GitHub B
         run: |
-          git push githubA main
+          git push 
