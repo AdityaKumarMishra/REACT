@@ -23,6 +23,6 @@ jobs:
         git add .
         git commit -m 'updating githubB'
         git remote add githubB https://github.com/devops-team-poc/terraform-poc.git
-        git push 
+        git push githubB main
       env:
         GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
