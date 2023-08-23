@@ -15,15 +15,13 @@ jobs:
 
       - name: Set Up Git
         run: |
-          git config --global user.name "aditya"
-          git config --global user.email "devops.consultancy@ongraph.com"
+          git config user.name "devops-team-poc"
+          git config user.email "devops.consultancy@ongraph.com"
           git remote add githubA https://github.com/devops-team-poc/terraform-poc.git
-          git config --global credential.helper store
-          git credential approve <https://github.com/devops-team-poc/terraform-poc.git>
-          protocol=https
-          host=github.com
-          username=devops-team-poc
-          password=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
+          git config credential.helper store
+          echo "https://github.com/devops-team-poc/terraform-poc.git" > ~/.git-credentials
+          echo "username=devops-team-poc" >> ~/.git-credentials
+          echo "password=${{ secrets.GH_B_TOKEN }}" >> ~/.git-credentials
 
       - name: Update GitHub B
         run: |
