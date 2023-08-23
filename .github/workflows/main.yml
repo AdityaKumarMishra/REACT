@@ -15,6 +15,7 @@ jobs:
 
     - name: Update GitHub B
       run: |
+        git checkout main
         git config --global user.name "Aditya"
         git config --global user.email "aditya@gmail.com"
         git remote add githubA https://github.com/devops-team-poc/terraform-poc.git
