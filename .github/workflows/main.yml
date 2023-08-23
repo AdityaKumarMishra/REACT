@@ -1,4 +1,4 @@
-name: Update GitHub A
+name: Update GitHub B
 
 on:
   push:
@@ -12,8 +12,9 @@ jobs:
     steps:
     - name: Check Out Code
       uses: actions/checkout@v3
-      run: |
-        git checkout main
+    
+    - name: Change to main branch
+      run: git checkout main
     
     - name: Update GitHub B
       run: |
