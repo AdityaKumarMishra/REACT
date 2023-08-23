@@ -17,7 +17,7 @@ jobs:
       run: |
         git config --global user.name "aditya"
         git config --global user.email "aditya@gmail.com"
-        git remote add githubA https://github.com/devops-team-poc/circleci-test.git
+        git remote add githubA https://github.com/devops-team-poc/terraform-poc.git
         git push githubA main
       env:
         GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
