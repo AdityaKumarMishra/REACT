@@ -13,11 +13,18 @@ jobs:
     - name: Check Out Code
       uses: actions/checkout@v3
 
+    - name: Set Up Git
+      run: |
+        git config --global user.name "aditya"
+        git config --global user.email "aditya@gmail.com"
+        git remote add githubA https://github.com/devops-team-poc/terraform-poc.git
+        git config --global credential.helper store
+        git credential approve <https://github.com/devops-team-poc/terraform-poc.git>
+        protocol=https
+        host=github.com
+        username=devops-team-poc
+        password=${{ secrets.GH_B_TOKEN }}
+
     - name: Update GitHub B
       run: |
-        git config --global user.name "devops-team-poc"
-        git config --global user.email "devops.consultancy@ongraph.com"
-        git remote add githubA https://github.com/devops-team-poc/terraform-poc.git
         git push githubA main
-      env:
-        GH_B_TOKEN: ${{ secrets.GH_B_TOKEN }}
